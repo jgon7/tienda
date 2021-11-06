@@ -146,13 +146,14 @@
 						</table>
 
 						<input type="submit" id="btnAceptar" style="margin-left:8px;" value="Registrar"  />
+						<input type="button" id="btnCancelar" value="Cancelar" onclick = "window.location='index.html'" />
 					</form>
 					<br/>
 				</fieldset>
 				<br/>
-				<input type="submit" id="btnAceptar" style="margin-left:8px;" value="Registrar"  />
+				
 				<span> </span>
-				<input type="button" id="btnCancelar" value="Cancelar" onclick="CambiarPagina('logueo.php');" />
+			
 			</div>
 
 			
