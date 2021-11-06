@@ -11,119 +11,38 @@
 		<meta http-equiv="refresh" content="3; URL=index.php" />
 		-->
 		<title>White Line</title>
-		<style>
-			* {
-			  box-sizing: border-box;
-			}
+		
 
-			body {
-			  font-family: Arial, Helvetica, sans-serif;
-			}
-
-			/* Style the header */
-			header {
-			  background-color: #666;
-			  padding: 30px;
-			  text-align: center;
-			  font-size: 35px;
-			  color: white;
-			}
-
-			/* Create two columns/boxes that floats next to each other */
-			nav {
-			  float: left;
-			  width: 300px;
-			  height: 100%; /* only for demonstration, should be removed */
-			  background: #ccc;
-			  padding: 20px;
-			  display: table;
-			}
-
-			/* Style the list inside the menu */
-			nav ul {
-			  list-style-type: none;
-			  padding: 0;
-			}
-			
-			/* Clear floats after the columns */
-			section::after {
-			  content: "";
-			  display: table;
-			  clear: both;
-			}
-
-			/* Style the footer */
-			footer {
-			  background-color: #777;
-			  padding: 10px;
-			  text-align: center;
-			  color: white;
-			}
-
-			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-			@media (max-width: 600px) {
-			  nav, article {
-				width: 100%;
-				height: auto;
-			  }
-			}
-			
-			.cArticulos {
-				position: relative;
-				background-color: #FFAAAA;
-				margin: 15px;
-				float: left;
-				padding: 20px;
-				width: 400px;
-				height: 250px; /* only for demonstration, should be removed */
-			}
-			
-			ul input{
-				border: solid 1px;
-				margin:2px;
-				text-align:left;
-				width:300px;
-			}
-			
-			.cLogueo{
-				font-family:arial;
-				font-size:14pt;
-				color:#FFFFFF;
-				text-align:right;
-			}
-            .card-container{
-                display: flex;
-                max-width: 500px;
-                border: 1px solid #111;
-                margin:auto;
-                margin-top: 100px;
-                margin-bottom: 100px;
-                color: black;
-            }
-            .form-group{
-                margin: 5px 20px;
-            }
-		</style>
     </head>
     <body style="background-color: #fff;">
 
         <header>
-			<h2>LOGO</h2>
-			<div>
-				<div style="display: table; width:100%; height:30px; background:#4444FF; padding: 10px;">
-					<input id="btn1" type="button" value="INICIO" onmouseover="MenuOver(true,this);" onmouseout="MenuOver(false,this);" onclick="CambiarPagina('index.php');" />
-					<input id="btn2" type="button" value="OFERTAS" onmouseover="MenuOver(true,this);" onmouseout="MenuOver(false,this);" onclick="CambiarPagina('productos.php');" />
-					<input id="btn3" type="button" value="PRODUCTOS" onmouseover="MenuOver(true,this);" onmouseout="MenuOver(false,this);" onclick="CambiarPagina('marcas.php');" />
-					<input id="btn4" type="button" value="CATEGORIA" onmouseover="MenuOver(true,this);" onmouseout="MenuOver(false,this);" onclick="CambiarPagina('marcas.php');" />
-					<input id="btn5" type="button" value="USUARIOS" onmouseover="MenuOver(true,this);" onmouseout="MenuOver(false,this);" onclick="CambiarPagina('marcas.php');" />
-					<!--<input id="btn5" type="button" />-->
+			
+			<nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 5%;">
+				<div class="container-fluid">
+				  <a class="navbar-brand" href="#"></a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+					  <li class="nav-item">
+						<a class="nav-link disabled" aria-current="page" href="#">Bienvenido Facundo</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="index.html">Productos</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">Carrito</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link " href="#">Historial de Compras</a>
+					  </li>
+					</ul>
+				  </div>
 				</div>
-				<div style="display:table; width:100%; padding:5px; font-size:0.5em; background:#44AA44">
-					<span>Bienvenido Administrador !!</span>
-					<!--<input id="btn5" type="button" />-->
-					<div style="float: right; width:30px; height:30px; background-color: #333333;">c</div>
-					<div style="float: right; width:30px; height:30px; background-color: #333333;">s</div>
-				</div>
+			  </nav>
+				
 			</div>
 		</header>
 
@@ -165,6 +84,18 @@
                                 <label class="control-label col-sm-12" for="txtImagen1">Imagen:</label>
                                 <div class="col-sm-12">
                                 <input type="file" class="form-control" id="txtImagen1" name="txtImagen1" placeholder="Ingresar nombre">
+                                </div>
+                            </div>
+							<div class="form-group">
+                                <label class="control-label col-sm-12" for="txtImagen2">Imagen:</label>
+                                <div class="col-sm-12">
+                                <input type="file" class="form-control" id="txtImagen2" name="txtImagen2" placeholder="Ingresar nombre">
+                                </div>
+                            </div>
+							<div class="form-group">
+                                <label class="control-label col-sm-12" for="txtImagen3">Imagen:</label>
+                                <div class="col-sm-12">
+                                <input type="file" class="form-control" id="txtImagen3" name="txtImagen3" placeholder="Ingresar nombre">
                                 </div>
                             </div>
                             <div class="form-group" style="margin-left: 20px; margin-top: 10px; margin-bottom: 20px;">
