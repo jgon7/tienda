@@ -115,7 +115,7 @@
 					<legend style="color:#CC5522; font-family:arial; font-size:14pt;">
 						Ingresar sus datos para el registro:
 					</legend>				
-					<form id="frm" style="margin-top:20px;" action="php/newuser.php" method="POST">
+					<form style="margin-top:20px;" action="newuser.php" method="POST">
 						<table>
 							<tr>
 								<td class="cLogueo">Documento:</td>
@@ -136,18 +136,21 @@
 							</tr>
 							<tr>
 								<td class="cLogueo">Direcci�n:</td>
-								<td><input type="text" id="inpTel" class="cTextBox" name="txtTel" maxlength="20" /></td>
+								<td><input type="text" id="inpDir" class="cTextBox" name="txtDir" maxlength="20" /></td>
 							</tr>
+							
 							<tr>
 								<td class="cLogueo">E-Mail:</td>
 								<td><input type="text" id="inpMail" class="cTextBox" name="txtMail" maxlength="40" /></td>
 							</tr>
 						</table>
+
+						<input type="submit" id="btnAceptar" style="margin-left:8px;" value="Registrar"  />
 					</form>
 					<br/>
 				</fieldset>
 				<br/>
-				<input type="button" id="btnAceptar" style="margin-left:8px;" value="Registrar" onclick="RegUser();" />
+				<input type="submit" id="btnAceptar" style="margin-left:8px;" value="Registrar"  />
 				<span> </span>
 				<input type="button" id="btnCancelar" value="Cancelar" onclick="CambiarPagina('logueo.php');" />
 			</div>
